@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../admin/css/AdminLogin.css">
+    <title>Login</title>
+    <style>
+        body {
+          background-image: url(01-01.jpg);
+        }
+        </style> 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-header">
+            <div class="titles">
+                <div class="title-login">Admin</div>
+            </div>
+        </div>
+        <!-- LOGIN FORM -->
+        <form action="adminlogin.php" class="login-form" autocomplete="off" method="POST" name="login-form">
+            <div class="input-box">
+                <input type="text" class="input-field" id="log-email" name=admin_id required>
+                <label for="log-email" class="label">ID</label>
+                <i class='bx bx-user icon'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="log-pass" name=password required>
+                <label for="log-pass" class="label">Password</label>
+                <i class='bx bx-lock-alt icon' ></i>
+            </div>
+            <div class="input-box">
+                <button class="btn-submit" id="SignInBtn">Sign In <i class='bx bx-log-in' ></i></button>
+            </div>
+
+        </form>
+            <div class="form-cols">
+            <div class="col-2"></div>
+            </div>
+        
+    </div>
+
+    <script src="../admin/js/script.js"></script>
+
+</body>
+</html>

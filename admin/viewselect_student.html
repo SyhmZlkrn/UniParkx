@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Selected Student</title>
+    <link rel="stylesheet" type="text/css" href="../admin/css/style2.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+    <h2><a href="admin_dashboard.html">Admin Panel</a></h2>
+    <a href="viewoption_student.html">View</a>
+    <a href="add_student.html">Add Student</a>
+    <a href="edit_student.html">Edit Student</a>
+    <a href="delete_student.html">Delete Student</a>
+    <a href="admin_dashboard.html">Logout</a>
+  </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="form-container">
+            <h2 class="center">View Selected Student</h2>
+            <form action="view_student.php" method="POST">
+                <label for="student_id">Student ID:</label>
+                <input type="text" id="student_id" name="student_id" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

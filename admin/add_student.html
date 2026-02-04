@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="../admin/css/style2.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2><a href="admin_dashboard.html">Admin Panel</a></h2>
+        <a href="viewoption_student.html">View</a>
+        <a href="add_student.html">Add Student</a>
+        <a href="edit_student.html">Edit Student</a>
+        <a href="delete_student.html">Delete Student</a>
+        <a href="AdminLogin.html">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Add Student</h2>
+            <form action="add_student.php" method="POST">
+                <label>Username:</label>
+                <input type="text" name="username" required>
+
+                <label>Student ID:</label>
+                <input type="text" name="student_id" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Password:</label>
+                <input type="password" name="password" required>
+
+                <label>Confirm Password:</label>
+                <input type="password" name="confirm_password" required>
+
+                <label>Apartment:</label>
+                <input type="text" name="apartment">
+
+                <label>College:</label>
+                <input type="text" name="college">
+
+                <label>Vehicle Model:</label>
+                <input type="text" name="vehicle_model">
+
+                <label>Plate Number:</label>
+                <input type="text" name="plate_number">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
